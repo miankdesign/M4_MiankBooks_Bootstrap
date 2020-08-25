@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Miank·Books</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- FONTS GOOGLE  -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway+Dots&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" href="style/styles.css">
+
+</head>
+
+
+
+
+<body>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+
+                <!------------------------------ BARRA MENÚ SUPERIOR ------------------------------>
+
+                <nav class="navbar navbar-expand-xl  navbar-dark fixed-top bg-dark">
+                    <a href="#" class="navbar-brand"><img src="img/logo.png" style="width: 8em;"></a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#uno"><span
+                            class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--------------- Buscador --------------->
+
+                    <div class="collapse navbar-collapse" id="uno">
+                        <form class="form-inline mt-2 mt-md-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="¡Busca tu libro!"
+                                aria-label="Buscar">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
+
+
+                        <!--------------- Menú tipos de libros --------------->
+
+                        <div class="collapse navbar-collapse justify-content-center" id="uno">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown" id="navbardrop">Ficción</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Fantasía</a>
+                                        <a href="#" class="dropdown-item">Terror</a>
+                                        <a href="#" class="dropdown-item">Ciencia Ficción</a>
+                                        <a href="#" class="dropdown-item">Histórica</a>
+                                        <a href="#" class="dropdown-item">Policíaca</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown" id="navbardrop">No Ficción</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Biografía</a>
+                                        <a href="#" class="dropdown-item">Ensayo</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="#" class="nav-link">Poesía</a>
+                                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown" id="navbardrop">Infantil & Juvenil</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Álbum infantil</a>
+                                        <a href="#" class="dropdown-item">Colecciones</a>
+                                        <a href="#" class="dropdown-item">Libros de texto</a>
+                                        <a href="#" class="dropdown-item">Cómics</a>
+                                    </div>
+                                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"
+                                        data-toggle="dropdown" id="navbardrop">Autores</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Escritores</a>
+                                        <a href="#" class="dropdown-item">Ilustradores</a>
+                                    </div>
+
+                                <li class="nav-item"><a href="#" data-toggle="tooltip" title="Regalos"
+                                        class="nav-link"><i class="fas fa-gift"></i>
+                            </ul>
+                        </div>
+
+
+
+                        <!------------------------------ LOGIN / CESTA ------------------------------>
+
+
+                        <div class="nav-item navbar-nav bg-dark rounded">
+                            <a href="#" data-toggle="tooltip" title="Entrar"><i class="fas fa-sign-in-alt"></i></a>
+                        </div>
+
+                        <div class="nav-item navbar-nav bg-dark rounded">
+                            <a href="#" data-toggle="tooltip" title="Registrarse"><i class="fas fa-user"></i></a>
+                        </div>
+
+                        <div class="nav-link bg-light rounded float-right">
+                            <a href="#" data-toggle="tooltip" title="Cesta"><i class="fas fa-shopping-basket"></i></a>
+                        </div>
+
+
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------ SLIDESHOW ------------------------------>
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicadores -->
+                <ul class="carousel-indicators">
+                    <li data-target="demo" data-slide-to="0" class="active"></li>
+                    <li data-target="demo" data-slide-to="1"></li>
+                    <li data-target="demo" data-slide-to="2"></li>
+
+                </ul>
+                <!-- Imagenes -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="img/banner1.jpg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h3 class="display-4" id="shadow">SANT JORDI</h3>
+                            <p><kbd>Los libros del día más especial </kbd></p>
+                            <a href="#" class="btn bg-warning">Sigue leyendo <i
+                                    class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/banner2.jpg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h3 class="display-4" id="shadow">NOVEDADES</h3>
+                            <p><kbd>Todas las publicaciones más recientes</kbd></p>
+                            <a href="#" class="btn bg-warning">Sigue leyendo <i
+                                    class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/banner3.jpg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h3 class="display-4" id="shadow">TALLERES</h3>
+                            <p><kbd>No te pierdas los talleres de lectura</kbd></p>
+                            <a href="#" class="btn bg-warning">Sigue leyendo <i
+                                    class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Controles de la izquierda y derecha -->
+                    <a href="#demo" class="carousel-control-prev" data-slide="prev"> <span
+                            class="carousel-control-prev-icon"></span></a>
+                    <a href="#demo" class="carousel-control-next" data-slide="next"> <span
+                            class="carousel-control-next-icon"></span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!------------------------------ SECCIONES LIBROS ------------------------------>
+
+    <section>
+        <div class="col-12">
+            <!-- Contenedor padre -->
+            <div class="flex-container1 rounded">
+                <!-- Contenedores hijos -->
+                <div class="jumbotron">
+                    <h4 class="display-5"> Recomendaciones </h4>
+                </div>
+                <div class="ImageContainer">
+                    <a href="#"><img src="img/book1.png" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book2.png" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book3.png" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book4.png" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book5.png" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book6.png" style="height: 12em;"></a>
+                </div>
+
+                <a class="btn btn-secondary btn-lg" href="#" role="button">Más recomendaciones
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section>
+        <div class="col-12">
+            <!-- Contenedor padre -->
+            <div class="flex-container2 rounded">
+                <!-- Contenedores hijos -->
+                <div class="jumbotron">
+                    <h4 class="display-5"> Novedades </h4>
+                </div>
+                <div class="ImageContainer">
+                    <a href="#"><img src="img/book7.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book8.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book9.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book10.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book11.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book12.jpg" style="height: 12em;"></a>
+                </div>
+
+                <a class="btn btn-secondary btn-lg" href="#" role="button">Más novedades
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section>
+        <div class="col-12">
+            <!-- Contenedor padre -->
+            <div class="flex-container3 rounded">
+                <!-- Contenedores hijos -->
+                <div class="jumbotron">
+                    <h4 class="display-5"> Superventas </h4>
+                </div>
+                <div class="ImageContainer">
+                    <a href="#"><img src="img/book13.jpg" style="height: 12em"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book14.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book15.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book16.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book17.jpg" style="height: 12em;"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="img/book18.jpg" style="height: 12em;"></a>
+                </div>
+
+                <a class="btn btn-secondary btn-lg" href="#" role="button">Más superventas
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+<footer class="footer">
+    <div class="container-fluid ">
+        <h4 style="color: dimgrey;">¡Contacta con Miank Books!</h4>
+
+
+        <div class="row ">
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <!-- Botón para abrir el Modal -->
+                <button type="button" class="btn btn-outline-dark btn-block fas fa-envelope" style="color: crimson;"
+                    data-toggle="modal" data-target="#myModal">
+                </button>
+
+                <!-- Formulario Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="escribe tu email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Mensaje</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Cuéntanos"></textarea>
+                                </div>
+                            </form>
+
+                            <!-- Botón enviar -->
+                            <div class="modal-footer ">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Enviar</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <button type="button" class="btn btn-outline-dark btn-block fab fa-whatsapp" style="color: #4AC959">
+                </button>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <button type="button" class="btn btn-outline-dark btn-block fab fa-facebook-f" style="color: #3B5998">
+                </button>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <button type="button" class="btn btn-outline-dark btn-block fab fa-twitter"
+                    style="color: #00ACEE"></button>
+                </button>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <button type="button" class="btn btn-outline-dark btn-block fab fa-linkedin" style="color: #0E76A8">
+                </button>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <button type="button" class="btn btn-outline-dark btn-block fab fa-instagram" style="color: #3F729B">
+                </button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+</footer>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+</html>
